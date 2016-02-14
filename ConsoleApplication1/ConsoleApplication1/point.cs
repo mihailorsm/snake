@@ -8,5 +8,13 @@ namespace ConsoleApplication1
 {
     class point
     {
+        public int x;
+        public int y;
+        public char symb;
+        public void Draw()
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(symb);
+        }
     }
 }
